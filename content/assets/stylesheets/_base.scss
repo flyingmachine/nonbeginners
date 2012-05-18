@@ -11,7 +11,7 @@ $base-line-height: 30px;
 
 // Grid --------------------------------------------------------------
 
-$total-cols: 8;
+$total-cols: 12;
 $col-width: 4em;
 $gutter-width: 1em;
 $side-gutter-width: $gutter-width;
@@ -21,11 +21,13 @@ $side-gutter-width: $gutter-width;
 
 // Colors --------------------------------------------------------------
 
-$base: #333;
+$base: #000;
 $alt: #005498;
 $dark: #253244;
-$highlight: #72a670;
-$background: #fffcf4;
+// $highlight: #72a670;
+$highlight: #709ca6;
+$background: #fffefb;
+// $background: #fff;
 $border: #999;
 
 // Fonts --------------------------------------------------------------
@@ -35,7 +37,7 @@ $border: #999;
 }
 
 @mixin serif-family {
-  font-family: "Hoefler Text", Cambria, Georgia, serif;
+  font-family: serif;
 }
 
 @mixin monospace-family {

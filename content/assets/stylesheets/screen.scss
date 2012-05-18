@@ -70,12 +70,16 @@ a {
 
 /* Headings -------------------------------------------------------------- */
 
+h1, h2, h3, h4, h5, h6 {
+  @include sans-family;
+  font-weight:bold;
+}
+
 h2, h3, h4, h,5 h6 {
   @include trailer; }
 
 h1 {
   @include adjust-font-size-to(30px, 1);
-  @include trailer(1, 30px);
 }
 
 h1 {
@@ -298,7 +302,7 @@ body {
   background:$highlight;
   padding:(0.5 * $base-line-height) $gutter-width;
   color:white;
-  margin:0 (-2 * $gutter-width) ($base-line-height * 2 - 4);
+  margin:0 (-2 * $gutter-width) ($base-line-height * 1 - 4);
   
   a {
     color:white;
@@ -333,7 +337,6 @@ hr {
 
 h1 {
   letter-spacing:0.15em;
-  @include leader(1, 21px);
 }
 
 strong {

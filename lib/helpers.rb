@@ -10,8 +10,26 @@ module CustomHelpers
     "<a href='#{item.path}' class='#{html_class}'>#{text}</a>"
   end
 
+  class << self
+    def kinds(*list)
+      
+    end
+  end
+  
   def article?(item)
-    item[:kind] == 'article'
+    kind?(item, 'article')
+  end
+
+  def guide?(item)
+    kind?(item, 'guide')
+  end
+
+  def kind?(item, kind)
+    item[:kind] == kind
+  end
+
+  def additional_stylesheets(item)
+    @item[:additional_stylesheets] || []
   end
 end
 
