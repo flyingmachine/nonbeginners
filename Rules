@@ -43,7 +43,7 @@ route '/assets/stylesheets/*' do
 end
 
 compile '/assets/javascripts/*' do
-  unless item.identifier.include?("_") || item.identifier.include?("#") || item.binary?
+  unless item.identifier.include?("_") || item.identifier.include?("#")
     if item.attributes[:filename] =~ /coffee$/
       filter :coffeescript
     end
