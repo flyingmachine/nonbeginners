@@ -3,7 +3,13 @@ title: Home - Flying Machine Studios
 created_at: Fri Jan 14 13:11:26 -0500 2011
 ---
 
-%h1 Guides
+%h1 Beyond the Basics
+
+%p
+  These guides document the larger programming ecosystems necessary to productively create real software. They cover debugging, package management, testing, and <a href="#the-format">other often-overlooked topics</a>.
+
+
+%h2 The Guides
 
 %section
   %ul.pages
@@ -13,3 +19,32 @@ created_at: Fri Jan 14 13:11:26 -0500 2011
       %li
         %a{:href => page.path}
           = page[:title]
+
+%h2
+  %a{name="the-format"}
+  The Format
+
+%p Each guide will follow this outline:
+
+.nogaps
+  :textile
+    * Debugging
+    * Editing environments
+    ** Emacs
+    ** Textmate
+    ** Sublime
+    ** Vim
+    * Libraries
+    ** Package management
+    ** How to develop a package locally
+    ** Documenting your package
+    * How to run a standalone program
+    ** How to compile
+    ** How to allow others to install it
+    * Interacting with the operating system
+    ** IO
+    ** Shelling out
+    * Social resources
+    ** Mailing lists
+    ** Forums
+    ** User groups

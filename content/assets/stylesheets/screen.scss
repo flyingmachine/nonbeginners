@@ -75,15 +75,15 @@ h1, h2, h3, h4, h5, h6 {
   font-weight:bold;
 }
 
-h2, h3, h4, h,5 h6 {
+h2, h3, h4, h5, h6 {
   @include trailer; }
 
 h1 {
   @include adjust-font-size-to(30px, 1);
+  @include leader(1, 30px);
+  @include trailer(1, 30px);
 }
 
-h1 {
-  @extend .allcaps; }
 
 h3 {
   font-weight: bold; }
@@ -142,7 +142,9 @@ pre, code, tt {
 /* Block -------------------------------------------------------------- */
 
 p {
-  @include trailer; }
+  @include trailer;
+  @include leader;
+}
 
 pre {
   margin-bottom: $base-rhythm-unit;
@@ -284,6 +286,7 @@ body {
   background: $background;
   @include border-radius(0 0 20px);
   margin-bottom:(2 * $base-line-height);
+  padding-bottom:($base-line-height);
   
   &.showgrid {
     @include show-grid("images/grid.png");
@@ -420,12 +423,8 @@ ol.pages {
   }
   
   h2 {
-    border-bottom:1px dashed $border;
-    margin-bottom:($base-line-height - 1px);
-    font-variant:small-caps;
-    text-transform:none;
-    margin-right:2px;
     @include adjust-font-size-to(24px);
+    margin-bottom:0;
   }
   
   h3 {
@@ -535,4 +534,10 @@ p, ol, ul {
 
 a.feed img {
   height:20px;
+}
+
+.nogaps {
+  ul {
+    margin-bottom:0
+  }
 }
