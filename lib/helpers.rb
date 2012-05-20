@@ -10,10 +10,8 @@ module CustomHelpers
     "<a href='#{item.path}' class='#{html_class}'>#{text}</a>"
   end
 
-  class << self
-    def kinds(*list)
-      
-    end
+  def kind?(item, kind)
+    item[:kind] == kind
   end
   
   def article?(item)
@@ -24,8 +22,8 @@ module CustomHelpers
     kind?(item, 'guide')
   end
 
-  def kind?(item, kind)
-    item[:kind] == kind
+  def guides
+    @items.select{ |i| guide?(item) }.sort{|a, b| a[:title] <=> b[:title]}
   end
 
   def additional_stylesheets(item)
