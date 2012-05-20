@@ -79,18 +79,15 @@ h2, h3, h4, h5, h6 {
   @include trailer; }
 
 h1 {
-  @include adjust-font-size-to(30px, 1);
-  @include leader(1, 30px);
-  @include trailer(1, 30px);
+  @include adjust-font-size-to(36px, 1);
+  @include leader(1, 36px);
+  @include trailer(1, 36px);
 }
 
 
 h3 {
   font-weight: bold; }
 
-h4 {
-  @extend .smallcaps;
-  text-transform: lowercase; }
 
 h5, h6 {
   font-style: italic; }
@@ -143,7 +140,6 @@ pre, code, tt {
 
 p {
   @include trailer;
-  @include leader;
 }
 
 pre {
@@ -277,7 +273,7 @@ button {
 // change '.container' to match your HTML container element
 // or @extend it to apply multiple containers on your site.
 body {
-  background:url("../assets/images/ui/light_honeycomb.png");
+  background:url("../assets/images/ui/hexellence.png");
 }
 
 
@@ -423,16 +419,13 @@ ol.pages {
   }
   
   h2 {
-    @include adjust-font-size-to(24px);
-    margin-bottom:0;
+    @include adjust-font-size-to(30px, 1);
+    @include trailer(1, 30px);
   }
   
   h3 {
-    font-weight:normal;
-    font-style:italic;
-    letter-spacing:0.05em;
-    margin-bottom:($base-line-height - 1px);
-    border-bottom:1px dotted lighten($border, 20%);
+    @include adjust-font-size-to(24px, 1);
+    @include trailer(1, 24px);
   }
   
   ul {

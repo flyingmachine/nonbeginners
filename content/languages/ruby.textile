@@ -2,3 +2,103 @@
 title: Ruby
 kind: guide
 ---
+
+h1. Ruby
+
+h2. Language Versions
+
+h3. Installing
+
+h4. RVM
+
+https://rvm.io//rvm/install/
+
+h4. rbenv
+
+https://github.com/sstephenson/rbenv
+
+h3. MRI
+
+MRI stands for "Matz Ruby Interpreter". It's the "official" version of the language.
+
+h4. 1.8
+
+* First release:
+* Latest release:
+
+h4. 1.9
+
+Use 1.9.3
+
+* First release:
+* Latest release:
+
+h4. 2.0
+
+Not yet released
+
+h3. JRuby
+
+http://jruby.org/
+
+h3. Rubinius
+
+Ruby built in Ruby.
+
+http://rubini.us/
+
+h2. Debugging
+
+http://pivotallabs.com/users/chad/blog/articles/366-ruby-debug-in-30-seconds-we-don-t-need-no-stinkin-gui-
+
+Use "ruby-debug" with MRI 1.8 and "ruby-debug19" in MRI 1.9 .
+
+h2. Package Management
+
+http://docs.rubygems.org/read/book/1
+
+h3. Installing
+
+h3. Upgrading
+
+h3. Using
+
+h3. Developing
+
+* Jeweler
+* Hoe
+
+h3. Dependency Management
+
+Bundler
+
+
+h2. Running a Standalone Program
+
+h3. Compiling
+
+h3. Allowing others to (easily) install it
+
+h2. Interacting with the operating system
+
+h3. IO
+
+h3. Shelling out
+
+h2. Social resources
+
+h3. Mailing lists
+
+h3. Forums
+
+h3. User groups
+
+h2. Editing environments
+
+h3. Emacs
+
+h3. Textmate
+
+h3. Sublime
+
+h3. Vim

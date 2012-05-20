@@ -21,26 +21,24 @@ created_at: Fri Jan 14 13:11:26 -0500 2011
           = page[:title]
 
 %h2
-  %a{name="the-format"}
+  <a name="the-format"></a>
   The Format
 
 %p Each guide will follow this outline:
 
 .nogaps
   :textile
+    * Language Versions
     * Debugging
-    * Editing environments
-    ** Emacs
-    ** Textmate
-    ** Sublime
-    ** Vim
-    * Libraries
-    ** Package management
-    ** How to develop a package locally
-    ** Documenting your package
-    * How to run a standalone program
-    ** How to compile
-    ** How to allow others to install it
+    * Package management
+    ** Installing
+    ** Upgrading
+    ** Using
+    ** Developing
+    ** Dependency Management
+    * Running a standalone program
+    ** Compiling
+    ** Allowing others to (easily) install it
     * Interacting with the operating system
     ** IO
     ** Shelling out
@@ -48,3 +46,8 @@ created_at: Fri Jan 14 13:11:26 -0500 2011
     ** Mailing lists
     ** Forums
     ** User groups
+    * Editing environments
+    ** Emacs
+    ** Textmate
+    ** Sublime
+    ** Vim
