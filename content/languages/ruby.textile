@@ -5,9 +5,34 @@ kind: guide
 
 h1. Ruby
 
-h2. Language Versions
+h2. Implementations
 
-There are many versions of Ruby. When you're starting out, it's best to stick to the latest MRI 1.9 version (1.9.3 at the time of writing). By doing so you'll learn the latest Ruby techniques and avoid compatibility issues which can be difficult to pinpoint and fix. You can then explore other versions as you want or need.
+h3. MRI (Matz Ruby Interpreter) is the official version of the language.  
+
+h3. JRuby
+
+http://jruby.org/
+
+h3. Rubinius
+
+Ruby built in Ruby.
+
+http://rubini.us/
+
+h2. Versions
+
+h3. 1.8
+
+There are still some libraries that are only compatible with Ruby 1.8. If you have to use 1.8, you should use 1.8.7
+
+h3. 1.9
+
+h3. 2.0
+
+Not yet released
+There are many versions of Ruby. When you're starting out, it's best to stick to the latest "MRI" 1.9 version (1.9.3 at the time of writing).  
+MRI means "Matz Ruby Interpreter". It's the official version of the language.  'Matz' refers to Yukihiro Matsumoto, the creator of Ruby.  
+By using the latest version you'll learn the latest Ruby techniques and avoid compatibility issues which can be difficult to pinpoint and fix. You can then explore other versions as you want or need.
 
 h3. Ruby Version Management
 
@@ -19,29 +44,7 @@ Rubyists have developed tools to improve the process of installing Ruby and swit
 
 The two main tools are "rvm":https://rvm.io//rvm/install/ and "rbenv":https://github.com/sstephenson/rbenv / "ruby-build":https://github.com/sstephenson/ruby-build. Both have very good documentation.
 
-h3. MRI
 
-MRI means "Matz Ruby Interpreter". It's the official version of the language.  'Matz' refers to Yukihiro Matsumoto, the creator of Ruby.
-
-h4. 1.8
-
-There are still some libraries that are only compatible with Ruby 1.8. If you have to use 1.8, you should use 1.8.7
-
-h4. 1.9
-
-h4. 2.0
-
-Not yet released
-
-h3. JRuby
-
-http://jruby.org/
-
-h3. Rubinius
-
-Ruby built in Ruby.
-
-http://rubini.us/
 
 h2. Debugging
 
