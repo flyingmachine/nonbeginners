@@ -21,7 +21,7 @@ The two main tools are "rvm":https://rvm.io//rvm/install/ and "rbenv":https://gi
 
 h3. MRI
 
-MRI stands for "Matz Ruby Interpreter". It's the official version of the language.
+MRI means "Matz Ruby Interpreter". It's the official version of the language.  'Matz' refers to Yukihiro Matsumoto, the creator of Ruby.
 
 h4. 1.8
 
