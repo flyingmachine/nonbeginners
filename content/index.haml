@@ -14,8 +14,8 @@ created_at: Fri Jan 14 13:11:26 -0500 2011
 %section
   %ul.pages
 
-    - @items.each do |page|
-      - next if page[:draft] || page[:kind] != "guide"
+    - guides.each do |page|
+      - next if page[:draft]
       %li
         %a{:href => page.path}
           = page[:title]
@@ -39,6 +39,7 @@ created_at: Fri Jan 14 13:11:26 -0500 2011
     * Running a standalone program
     ** Compiling
     ** Allowing others to (easily) install it
+    ** Building CLI app
     * Interacting with the operating system
     ** IO
     ** Shelling out

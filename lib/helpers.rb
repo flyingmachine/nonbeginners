@@ -23,7 +23,7 @@ module CustomHelpers
   end
 
   def guides
-    @items.select{ |i| guide?(item) }.sort{|a, b| a[:title] <=> b[:title]}
+    @items.select{ |i| guide?(i) }.sort{|a, b| a[:title] <=> b[:title]}
   end
 
   def additional_stylesheets(item)

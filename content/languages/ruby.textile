@@ -7,31 +7,27 @@ h1. Ruby
 
 h2. Language Versions
 
-h3. Installing
+There are many versions of Ruby. When you're starting out, it's best to stick to the latest MRI 1.9 version (1.9.3 at the time of writing). By doing so you'll learn the latest Ruby techniques and avoid compatibility issues which can be difficult to pinpoint and fix. You can then explore other versions as you want or need.
 
-h4. RVM
+h3. Ruby Version Management
 
-https://rvm.io//rvm/install/
+Rubyists have developed tools to improve the process of installing Ruby and switching between versions. There are some differences between the tools, but at the end of the day they allow you to:
 
-h4. rbenv
+* Change the global Ruby version
+* Specify the Ruby version per-project
+* Install Ruby
 
-https://github.com/sstephenson/rbenv
+The two main tools are "rvm":https://rvm.io//rvm/install/ and "rbenv":https://github.com/sstephenson/rbenv / "ruby-build":https://github.com/sstephenson/ruby-build. Both have very good documentation.
 
 h3. MRI
 
-MRI stands for "Matz Ruby Interpreter". It's the "official" version of the language.
+MRI stands for "Matz Ruby Interpreter". It's the official version of the language.
 
 h4. 1.8
 
-* First release:
-* Latest release:
+There are still some libraries that are only compatible with Ruby 1.8. If you have to use 1.8, you should use 1.8.7
 
 h4. 1.9
-
-Use 1.9.3
-
-* First release:
-* Latest release:
 
 h4. 2.0
 
@@ -49,11 +45,11 @@ http://rubini.us/
 
 h2. Debugging
 
-http://pivotallabs.com/users/chad/blog/articles/366-ruby-debug-in-30-seconds-we-don-t-need-no-stinkin-gui-
+"Ruby Debug in 30 Seconds":http://pivotallabs.com/users/chad/blog/articles/366-ruby-debug-in-30-seconds-we-don-t-need-no-stinkin-gui
 
 Use "ruby-debug" with MRI 1.8 and "ruby-debug19" in MRI 1.9 .
 
-h2. Package Management
+h2. Package Management - Ruby Gems
 
 http://docs.rubygems.org/read/book/1
 
@@ -67,11 +63,11 @@ h3. Developing
 
 * Jeweler
 * Hoe
+* Bundler
 
 h3. Dependency Management
 
-Bundler
-
+"Bundler":http://gembundler.com/v1.1/index.html is the canonical tool for managing Ruby gem dependencies. Before bundler, it was difficult to specify exactly which versions of a gem should be used and to ensure that the gems you load wouldn't load a conflicting gem. If you ever run into a problem where Ruby throws an error along the lines of, "can't activate activerecord (= 2.0.2), already activated activerecord-1.15.3", then Bundler will help you solve that problem.
 
 h2. Running a Standalone Program
 
