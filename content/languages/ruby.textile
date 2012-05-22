@@ -7,7 +7,8 @@ h1. Ruby
 
 h2. Language Versions
 
-There are many versions of Ruby. When you're starting out, it's best to stick to the latest MRI 1.9 version (1.9.3 at the time of writing). By doing so you'll learn the latest Ruby techniques and avoid compatibility issues which can be difficult to pinpoint and fix. You can then explore other versions as you want or need.
+There are many versions of Ruby. When you're starting out, it's best to stick to the latest "MRI" 1.9 version (1.9.3 at the time of writing).  
+By doing so you'll learn the latest Ruby techniques and avoid compatibility issues which can be difficult to pinpoint and fix. You can then explore other versions as you want or need.
 
 h3. Ruby Version Management
 
