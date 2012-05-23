@@ -7,32 +7,37 @@ h1. Ruby
 
 h2. Implementations
 
-h3. MRI (Matz Ruby Interpreter) is the official version of the language.  
+The Ruby language exists outside of any specific implementation in the same way that the definition of a word exists outside of any specific dictionary or the concept of monumemental hair styles exists outside of Donald Trump. The main implementations are covered below.
+
+h3. MRI (Matz Ruby Interpreter)
+
+MRI is the official language implementation. "Yukihiro Matsumoto":http://en.wikipedia.org/wiki/Yukihiro_Matsumoto , Ruby's creator, and the "Ruby core team":http://rubycoreteam.heroku.com/ implement new versions of the language in MRI.
+
+It's best to use the MRI implementation of Ruby 1.9.3 unless you have a specific need to use another implementation. This is not to disparage JRuby or Rubinius, which both have their advantages. Rather, it's a recognition of the fact that if you use JRuby or Rubinius it's easier to confuse implementation-specific issues with issues related to the language itself.
+
+By using the latest version and the official implementation you'll learn the latest Ruby techniques and avoid compatibility issues which can be difficult to pinpoint and fix.
 
 h3. JRuby
 
-http://jruby.org/
+"JRuby":http://jruby.org/ is a ruby implementation built on the JVM. It's known for its efficiency and for its ability to leverage other JVM libraries.
 
 h3. Rubinius
 
-Ruby built in Ruby.
+"Rubinius":http://rubini.us/ is Ruby built in Ruby. From its home page:
 
-http://rubini.us/
+bq.. The Rubinius bytecode virtual machine is written in C++, incorporating LLVM to compile bytecode to machine code at runtime. The bytecode compiler and vast majority of the core classes are written in pure Ruby.
+
+To interact with the rest of the system, the VM provides primitives which can be attached to methods and invoked. Additionally, FFI provides a direct call path to most C functions.
+
+Rubinius uses a precise, compacting, generational garbage collector. It includes a compatible C-API for C extensions written for the standard Ruby interpreter (often referred to as MRI—Matz's Ruby Implementation).
 
 h2. Versions
 
-h3. 1.8
+A Ruby version refers to two thing: a set of syntax and semantics, and the state of the MRI at a point in time. So, for example, when the Rubinius team says that Rubinius targets Ruby 1.8.7, it means that a program using 1.8.7's syntax and semantics should behave the same way in Rubinius as it does in MRI.
 
-There are still some libraries that are only compatible with Ruby 1.8. If you have to use 1.8, you should use 1.8.7
+At the same time, new versions of Ruby also incorporate changes not related to the language in itself, like improvements to garbage collection.
 
-h3. 1.9
-
-h3. 2.0
-
-Not yet released
-There are many versions of Ruby. When you're starting out, it's best to stick to the latest "MRI" 1.9 version (1.9.3 at the time of writing).  
-MRI means "Matz Ruby Interpreter". It's the official version of the language.  'Matz' refers to Yukihiro Matsumoto, the creator of Ruby.  
-By using the latest version you'll learn the latest Ruby techniques and avoid compatibility issues which can be difficult to pinpoint and fix. You can then explore other versions as you want or need.
+There are two versions of Ruby primarily used today: 1.8.7 and 1.9.3 . As mentioned above, it's best to start learning using 1.9.3.
 
 h3. Ruby Version Management
 
@@ -43,8 +48,6 @@ Rubyists have developed tools to improve the process of installing Ruby and swit
 * Install Ruby
 
 The two main tools are "rvm":https://rvm.io//rvm/install/ and "rbenv":https://github.com/sstephenson/rbenv / "ruby-build":https://github.com/sstephenson/ruby-build. Both have very good documentation.
-
-
 
 h2. Debugging
 
@@ -91,6 +94,16 @@ h3. Mailing lists
 h3. Forums
 
 h3. User groups
+
+h2. Testing
+
+h3. Test::Unit
+
+h3. RSpec
+
+h3. Cucumber
+
+h3. Steak
 
 h2. Editing environments
 

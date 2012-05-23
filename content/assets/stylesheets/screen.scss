@@ -437,6 +437,9 @@ ol.pages {
   h2 {
     @include adjust-font-size-to(30px, 1);
     @include trailer(1, 30px);
+    border-left: ($gutter-width - .3em) solid $highlight;
+    margin-left: (-1 * $gutter-width);
+    padding-left: .3em;
   }
   
   h3 {
